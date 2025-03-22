@@ -1,0 +1,9 @@
+# Ignore API keys and sensitive config files
+config/
+
+# Ignore downloaded models and Vosk models
+models/
+
+# Ignore Python cache files
+__pycache__/
+*.pyc
