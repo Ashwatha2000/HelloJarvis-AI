@@ -4,6 +4,8 @@ config/
 # Ignore downloaded models and Vosk models
 models/
 
+node_modules/
+
 # Ignore Python cache files
 __pycache__/
 *.pyc

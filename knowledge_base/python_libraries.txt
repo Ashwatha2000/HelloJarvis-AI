@@ -1,0 +1,235 @@
+1. Data Manipulation and Analysis
+
+NumPy
+NumPy is a fundamental package for numerical computations in Python, providing support for large, multi-dimensional arrays and matrices, along with a collection of mathematical functions to operate on them.​
+
+Key Features:
+
+Efficient array computations​
+Broadcasting functions​
+Linear algebra operations​
+Reddit
++9
+维基百科，自由的百科全书
++9
+Learn R, Python & Data Science Online
++9
+Example:
+
+import numpy as np
+
+# Create a 1D array
+arr = np.array([1, 2, 3, 4])
+
+# Compute the mean
+mean_value = np.mean(arr)
+pandas
+pandas is a powerful library for data manipulation and analysis, offering data structures like DataFrames and Series to handle structured data easily.​
+
+Key Features:
+
+Data cleaning and preparation​
+Handling missing data​
+OpenCV
++1
+DEV Community
++1
+Merging and joining datasets​
+Example:
+
+import pandas as pd
+
+# Create a DataFrame
+data = {'Name': ['Alice', 'Bob'], 'Age': [25, 30]}
+df = pd.DataFrame(data)
+
+# Select rows where Age > 25
+filtered_df = df[df['Age'] > 25]
+2. Data Visualization
+
+Matplotlib
+Matplotlib is a versatile plotting library for creating static, animated, and interactive visualizations in Python.​
+
+Key Features:
+
+Line plots, scatter plots, bar charts​
+Customization of plots​
+Wikipedia, l'enciclopedia libera
++2
+GeeksforGeeks
++2
+GitHub
++2
+Integration with other libraries​
+Example:
+
+import matplotlib.pyplot as plt
+
+# Create data
+x = [1, 2, 3, 4]
+y = [10, 20, 25, 30]
+
+# Create a line plot
+plt.plot(x, y)
+plt.xlabel('X-axis')
+plt.ylabel('Y-axis')
+plt.title('Simple Line Plot')
+plt.show()
+Seaborn
+Seaborn is built on top of Matplotlib and provides a high-level interface for drawing attractive statistical graphics.​
+
+Key Features:
+
+Statistical plots​
+Learn R, Python & Data Science Online
++1
+维基百科，自由的百科全书
++1
+Themed visualizations​
+DataFrame support​
+Learn R, Python & Data Science Online
++1
+Wikipedia
++1
+Example:
+
+import seaborn as sns
+import pandas as pd
+
+# Load dataset
+df = sns.load_dataset('iris')
+
+# Create a pairplot
+sns.pairplot(df, hue='species')
+3. Machine Learning and Deep Learning
+
+scikit-learn
+scikit-learn is a widely-used library for machine learning, offering simple and efficient tools for predictive data analysis.​
+GitHub
+
+Key Features:
+
+Classification, regression, clustering algorithms​
+Dimensionality reduction​
+Model selection and evaluation​
+GeeksforGeeks
++2
+Learn R, Python & Data Science Online
++2
+OpenCV
++2
+Example:
+
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+# Load dataset
+iris = load_iris()
+X, y = iris.data, iris.target
+
+# Split data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Train model
+clf = RandomForestClassifier()
+clf.fit(X_train, y_train)
+
+# Predict
+y_pred = clf.predict(X_test)
+accuracy = accuracy_score(y_test, y_pred)
+TensorFlow
+TensorFlow is an end-to-end open-source platform for machine learning, particularly deep learning, developed by Google.​
+
+Key Features:
+
+Flexible architecture​
+维基百科，自由的百科全书
+Deployment across platforms​
+DEV Community
++1
+Wikipedia
++1
+Extensive community and resources​
+Example:
+
+import tensorflow as tf
+
+# Create a constant tensor
+hello = tf.constant('Hello, TensorFlow!')
+
+# Start a session
+tf.print(hello)
+PyTorch
+PyTorch is an open-source deep learning framework known for its dynamic computation graph and intuitive interface, developed by Facebook's AI Research lab.​
+
+Key Features:
+
+Dynamic computation graph​
+Strong GPU acceleration​
+Extensive neural network libraries​
+Example:
+
+import torch
+
+# Create a tensor
+x = torch.tensor([1.0, 2.0, 3.0])
+
+# Perform a computation
+y = x * 2
+4. Web Development
+
+Flask
+Flask is a lightweight WSGI web application framework in Python, designed with simplicity and flexibility in mind.​
+
+Key Features:
+
+Minimalistic and modular​
+Built-in development server​
+Extensive documentation​
+GitHub
++3
+Great Learning
++3
+Wikipedia, l'enciclopedia libera
++3
+Example:
+
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():
+    return 'Hello, Flask!'
+
+if __name__ == '__main__':
+    app.run(debug=True)
+Django
+Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design.​
+
+Key Features:
+
+Object-relational mapper (ORM)​
+Wikipedia, l'enciclopedia libera
+Admin interface​
+Scalability​
+DEV Community
+Example:
+
+# In views.py
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse('Hello, Django!')
+5. Web Scraping
+
+BeautifulSoup
+BeautifulSoup is a library for parsing HTML and XML documents, creating parse trees to navigate and search elements easily.​
+
+Key Features:
+
+Parsing HTML/XML​
+Navigating parse trees​
+Automatic

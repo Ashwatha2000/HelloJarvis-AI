@@ -1,5 +1,5 @@
 import json
-import openai
+from openai import OpenAI
 import requests
 import pyaudio
 import pyttsx3
@@ -8,7 +8,7 @@ from vosk import Model, KaldiRecognizer
 # ✅ Load API key from config.json
 with open("./config/config.json", "r") as config_file:
     config = json.load(config_file)
-    openai.api_key = config["openai_api_key"]
+    client = OpenAI(api_key=config["openai_api_key"])
 
 # Initialize the TTS engine
 tts_engine = pyttsx3.init()
@@ -64,12 +64,12 @@ while True:
                         break  # Exit loop when query is received
             
             # Send user query to OpenAI
-            response = openai.ChatCompletion.create(
+            response = client.chat.completions.create(
                 model="gpt-3.5-turbo",  # Or "gpt-4" for better responses
                 messages=[{"role": "system", "content": "You are a helpful assistant."},
                           {"role": "user", "content": user_query}]
             )
 
-            ai_text = response["choices"][0]["message"]["content"]
+            ai_text = response.choices[0].message.content
             print(f"AI Response: {ai_text}")
             speak(ai_text)

@@ -1,0 +1,128 @@
+1. Syntax Errors
+
+Description: Syntax errors occur when the Python interpreter encounters code that doesn't conform to the language's syntax rules, preventing the code from executing.​
+Medium
++2
+Better Stack
++2
+Rollbar
++2
+
+Example:
+
+print("Hello, World! # Missing closing parenthesis
+Solution: Ensure all parentheses, brackets, and quotes are properly closed and that the code adheres to Python's syntax rules.​
+
+Reference: 15 Common Errors in Python and How to Fix Them
+
+2. Indentation Errors
+
+Description: Python relies on indentation to define code blocks. Incorrect or inconsistent indentation can lead to IndentationError.​
+
+Example:
+
+def greet(name):
+print(f"Hello, {name}")  # Missing indentation
+Solution: Use consistent indentation (preferably four spaces) to define code blocks.​
+Stack Overflow
++3
+Stack Overflow
++3
+Medium
++3
+
+Reference: The Different Types of Python Errors and How to Handle Them
+
+3. Name Errors
+
+Description: A NameError occurs when the code references a variable or function that hasn't been defined.​
+
+Example:
+
+print(age)  # 'age' is not defined
+Solution: Ensure that all variables and functions are defined before they are used.​
+
+Reference: 15 Common Errors in Python and How to Fix Them
+
+4. Type Errors
+
+Description: A TypeError arises when an operation is applied to an object of inappropriate type.​
+
+Example:
+
+result = '2' + 3  # Cannot concatenate str and int
+Solution: Perform explicit type conversions when necessary.​
+
+Reference: The Different Types of Python Errors and How to Handle Them
+
+5. Attribute Errors
+
+Description: An AttributeError occurs when an invalid attribute reference is made.​
+Stack Overflow
+
+Example:
+
+my_list = [1, 2, 3]
+my_list.push(4)  # 'list' object has no attribute 'push'
+Solution: Use the correct method for the object type.​
+
+Reference: 15 Common Errors in Python and How to Fix Them
+
+6. Index Errors
+
+Description: An IndexError occurs when attempting to access an index that is out of the range of a list or tuple.​
+
+Example:
+
+my_list = [1, 2, 3]
+print(my_list[5])  # IndexError: list index out of range
+Solution: Ensure the index is within the valid range of the list or tuple.​
+
+Reference: The Different Types of Python Errors and How to Handle Them
+
+7. Key Errors
+
+Description: A KeyError occurs when trying to access a dictionary with a key that doesn't exist.​
+
+Example:
+
+my_dict = {'name': 'Alice'}
+print(my_dict['age'])  # KeyError: 'age'
+Solution: Check if the key exists in the dictionary before accessing it.​
+
+Reference: The 5 Primary Errors in Python Programming and Their Solutions
+
+8. Value Errors
+
+Description: A ValueError occurs when a function receives an argument of the correct type but an inappropriate value.​
+Stack Overflow
+
+Example:
+
+int('abc')  # ValueError: invalid literal for int() with base 10: 'abc'
+Solution: Ensure that function arguments have appropriate values.​
+
+Reference: 15 Common Errors in Python and How to Fix Them
+
+9. ZeroDivision Errors
+
+Description: A ZeroDivisionError occurs when a division or modulo operation is performed with zero as the divisor.​
+
+Example:
+
+result = 10 / 0  # ZeroDivisionError: division by zero
+Solution: Check that the divisor is not zero before performing division or modulo operations.​
+
+Reference: The Different Types of Python Errors and How to Handle Them
+
+10. Import Errors
+
+Description: An ImportError occurs when an import statement fails to find the module definition or when a from...import fails to find a name that is to be imported.​
+Stack Overflow
+
+Example:
+
+import non_existent_module  # ImportError: No module named 'non_existent_module'
+Solution: Ensure that the module or name being imported exists and is accessible.​
+
+Reference: Where's the standard python exception list for programmes to raise?

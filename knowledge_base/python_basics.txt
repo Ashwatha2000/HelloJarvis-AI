@@ -1,0 +1,199 @@
+1. Introduction to Python
+
+Overview: Python is a high-level, interpreted programming language known for its readability and versatility.​
+
+Example:
+
+# This is a simple Python program to print "Hello, World!"
+print("Hello, World!")
+2. Variables and Data Types
+
+Variables: Variables in Python are dynamically typed, meaning you don't need to declare their type explicitly.​
+
+Example:
+
+# Assigning values to variables
+x = 10        # Integer
+y = 3.14      # Float
+name = "Alice"  # String
+is_active = True  # Boolean
+Data Types:
+
+Integers: Whole numbers, e.g., 5, -3​
+Floats: Numbers with decimals, e.g., 2.718, -0.001​
+Strings: Sequences of characters, e.g., "Hello"​
+Booleans: True or False values​
+Lists: Ordered, mutable collections, e.g., [1, 2, 3]​
+Tuples: Ordered, immutable collections, e.g., (4, 5, 6)​
+Dictionaries: Key-value pairs, e.g., {"key": "value"}​
+3. Control Structures
+
+Conditional Statements: Used to execute code based on conditions.​
+
+Example:
+
+# Check if a number is positive, negative, or zero
+num = 10
+if num > 0:
+    print("Positive")
+elif num == 0:
+    print("Zero")
+else:
+    print("Negative")
+Loops: Used for iterating over sequences or repeating actions.​
+Wikipedia
++7
+arXiv
++7
+Programiz
++7
+
+for Loop Example:
+
+# Print numbers from 0 to 4
+for i in range(5):
+    print(i)
+while Loop Example:
+
+# Print numbers from 0 to 4 using a while loop
+count = 0
+while count < 5:
+    print(count)
+    count += 1
+4. Functions
+
+Functions are reusable blocks of code that perform a specific task.​
+
+Example:
+
+# Function to add two numbers
+def add(a, b):
+    return a + b
+
+# Using the function
+result = add(5, 3)
+print(result)  # Output: 8
+5. Classes and Objects
+
+Python supports object-oriented programming with classes and objects.​
+
+Example:
+
+# Define a class
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def greet(self):
+        print(f"Hello, my name is {self.name} and I am {self.age} years old.")
+
+# Create an object
+person1 = Person("Alice", 30)
+person1.greet()  # Output: Hello, my name is Alice and I am 30 years old.
+6. File Handling
+
+Python provides functions to read from and write to files.​
+
+Example:
+
+# Writing to a file
+with open('example.txt', 'w') as file:
+    file.write('Hello, World!')
+
+# Reading from a file
+with open('example.txt', 'r') as file:
+    content = file.read()
+    print(content)  # Output: Hello, World!
+7. Exception Handling
+
+Manage errors gracefully using try-except blocks.​
+
+Example:
+
+try:
+    result = 10 / 0
+except ZeroDivisionError:
+    print("Cannot divide by zero!")
+8. Modules and Packages
+
+Organize code into modules and packages for better structure.​
+
+Example:
+
+# Importing the math module
+import math
+
+# Using a function from the math module
+print(math.sqrt(16))  # Output: 4.0
+9. List Comprehensions
+
+Concise way to create lists.​
+
+Example:
+
+# Create a list of squares from 0 to 4
+squares = [x**2 for x in range(5)]
+print(squares)  # Output: [0, 1, 4, 9, 16]
+10. Useful Python Programs
+
+1. Factorial Calculation:
+
+# Function to calculate factorial
+def factorial(n):
+    if n == 0:
+        return 1
+    else:
+        return n * factorial(n-1)
+
+# Example usage
+print(factorial(5))  # Output: 120
+2. Prime Number Check:
+
+# Function to check if a number is prime
+def is_prime(num):
+    if num <= 1:
+        return False
+    for i in range(2, int(num**0.5) + 1):
+        if num % i == 0:
+            return False
+    return True
+
+# Example usage
+print(is_prime(7))  # Output: True
+3. Fibonacci Sequence:
+
+# Function to generate Fibonacci sequence up to n terms
+def fibonacci(n):
+    sequence = []
+    a, b = 0, 1
+    while len(sequence) < n:
+        sequence.append(a)
+        a, b = b, a + b
+    return sequence
+
+# Example usage
+print(fibonacci(5))  # Output: [0, 1, 1, 2, 3]
+4. Simple Calculator:
+
+# Simple calculator functions
+def add(x, y):
+    return x + y
+
+def subtract(x, y):
+    return x - y
+
+def multiply(x, y):
+    return x * y
+
+def divide(x, y):
+    if y == 0:
+        return "Cannot divide by zero!"
+    return x / y
+
+# Example usage
+print(add(10, 5))        # Output: 15
+print(subtract(10, 5))   # Output: 5
+print(multiply(10, 5))   # Output: 50
+print(divide(10, 5))     # Output
+::contentReference[oaicite:34]{index=34}
