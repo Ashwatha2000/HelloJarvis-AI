@@ -5,7 +5,7 @@ config/
 models/
 
 node_modules/
-
+venv/
 # Ignore Python cache files
 __pycache__/
 *.pyc
